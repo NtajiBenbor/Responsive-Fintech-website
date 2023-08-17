@@ -76,6 +76,7 @@ header {
     max-width: 1100px;
     text-align: center;
     margin: 0 auto;
+    border: 2px solid rebeccapurple;
     
 }
 
@@ -141,7 +142,9 @@ nav {
     text-align: left;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
+    border: 1px solid red;
+    
     
     
     
@@ -150,6 +153,8 @@ nav {
 
 .hero-text-container {
     /* order: -1;  */
+    border: 2px solid yellow;
+    padding: 1em;
    
    
     
@@ -158,13 +163,14 @@ nav {
 }
 
 .hero-image-container {
-    order: -1;
-   
-    
-  
-   
+    order: -1;  
+    border: 2px solid yellow;
+    padding: 1em;
     
 }
+
+
+
 .hero-image {
     object-fit: cover;
     min-width: 100%;
@@ -303,13 +309,13 @@ nav {
 
 
 .hero-text-container {
-    width: 45%;
+    width: 50%;
     min-width: 400px;
     
 }
 
 .hero-image-container {
-    width: 45%;
+    width: 50%;
     min-width: 400px;
     
 }

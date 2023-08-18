@@ -63,20 +63,30 @@ a {
 /*============ LAYOUTS========= */
 
 header {
-    width: 100%;
+    max-width: 100%;
     background-color: #f8f8f8;
     padding: .2em;
     margin-bottom: 1em;
+    /* border: 2px solid yellow; */
     
+    
+    
+}
+
+.header-container {
+    /* width: 100%;
+    border: 2px solid red; */
+   
 }
 
 
 .container {
-    width: 90%;
-    max-width: 1100px;
+    width: 95%;
+    max-width: 1200px;
     text-align: center;
     margin: 0 auto;
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
+    
     
 }
 
@@ -124,8 +134,9 @@ nav {
 /* == Nav login and signup button container== */
 .nav-buttons-container {
     margin: 0;
-    min-width: 200px;
+    /* min-width: 200px; */
     padding: 0;
+    /* border: 3px solid green; */
     
 }
 
@@ -143,7 +154,8 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    margin-bottom: 2em;
     
     
     
@@ -153,19 +165,16 @@ nav {
 
 .hero-text-container {
     /* order: -1;  */
-    border: 2px solid yellow;
-    padding: 1em;
-   
-   
-    
-   
+    /* border: 2px solid yellow; */
+    padding: 1em;   
    
 }
 
 .hero-image-container {
     order: -1;  
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     padding: 1em;
+    
     
 }
 
@@ -173,10 +182,12 @@ nav {
 
 .hero-image {
     object-fit: cover;
-    min-width: 100%;
+    width: 100%;
+    /* min-width: 500px; */
     border-radius: 15px;
-
-    /* min-height: 500px; */
+    background-color: rgba(160, 193, 247, 0.1);
+    /* position: bottom; */
+    max-height: 500px;
     
     
 }
@@ -205,7 +216,17 @@ nav {
     width: 80%;
     background-color: #e7e2e2;
     border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     
+}
+
+.hero-text-container .hero-signup-btn {
+    width: 80%;
+    position: relative;
+    left: 35px;
 }
 
 /* Modfier class for Nav and Hero sign up buttons */
@@ -227,13 +248,21 @@ nav {
     margin: 1em 0;
 }
 
-/* .botton-logo {
-    width: min(25px, 5vw);
-    padding-top: 10px;
+.button-logo {
+    height: 20px;
+   margin-right: 10px;
     
    
-} */
+}
+  
 
+/* ================================================== */
+
+/* ==Client Advert Section== */
+
+.client-ads-container {
+    display: none;
+}
 
 
 
@@ -242,14 +271,18 @@ nav {
 /* Media Queries */
 
 @media (min-width: 615px) {
-    .header {
-       
+
+    header {
+        min-width: 1000px;
+    }
+   
+    .header-container {
+        display: flex;
+        justify-content: space-between;
     }
 
     .container {
-        display: flex;
-        justify-content: space-between;
-        min-width: 800px;
+        min-width: 1000px;
         
     }
 
@@ -281,9 +314,7 @@ nav {
 
     .nav-buttons-container {
         width: 20%;
-      
         margin-top: 1em;
-        
     }
 
     .nav-buttons {
@@ -299,6 +330,13 @@ nav {
         background-color: #1b4bf8;
         color: #f8f8f8;
     }
+
+    #hero-signup-btn {
+        width: 30%;
+        position: relative;
+        left: 0;
+    }
+    
   /* ==Hero Section== */
   .hero-section {
     text-align: left;
@@ -311,6 +349,7 @@ nav {
 .hero-text-container {
     width: 50%;
     min-width: 400px;
+    padding-left: 4em;
     
 }
 
@@ -344,13 +383,31 @@ nav {
 
 }
 
+/* ==Client Advert Section== */
 
+.client-ads-container {
+    display: flex;
+    width: 100%;
+    background-color: #e7e2e2;
+    padding: e0;
+    justify-content: space-evenly;
+    
+}
+
+.client-ads {
+    width: 17%;
+}
+
+.client-ads-image {
+    width: 100%;
+
+}
 
 }
 
 /* Media querie for the Nav Login and Sign up buttons */
-@media (max-width: 855px) {
+/* @media (max-width: 855px) {
     .nav-buttons-container {
         padding: .5em;
     }    
-}
+} */

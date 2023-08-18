@@ -62,11 +62,24 @@ a {
 
 /*============ LAYOUTS========= */
 
+.container {
+    width: 95%;
+    max-width: 1400px;
+    text-align: center;
+    margin: 0 auto;
+    /* border: 2px solid rebeccapurple; */
+    
+    
+}
+
+
 header {
-    max-width: 100%;
+    /* max-width: 100%; */
     background-color: #f8f8f8;
     padding: .2em;
     margin-bottom: 1em;
+    border-bottom: 2px  solid #e7e2e2;
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.1);
     /* border: 2px solid yellow; */
     
     
@@ -80,15 +93,6 @@ header {
 }
 
 
-.container {
-    width: 95%;
-    max-width: 1200px;
-    text-align: center;
-    margin: 0 auto;
-    border: 2px solid rebeccapurple;
-    
-    
-}
 
 /* ==navigation== */
 
@@ -109,6 +113,7 @@ nav {
 .nav-li-links {
     padding: .5em;
     text-decoration: none;
+    font-weight: 700;
     
 
 }
@@ -153,11 +158,8 @@ nav {
     text-align: left;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    border: 1px solid red;
-    margin-bottom: 2em;
-    
-    
+    /* border: 1px solid red; */
+    margin-bottom: 1em;  
     
     
 }
@@ -199,7 +201,6 @@ nav {
 .hero-button-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
     padding-top: 0;
    
@@ -210,13 +211,12 @@ nav {
 
 /* Sign up, Android and Iphone Buttons  */
 
-.hero-btn,
-.hero-signup-btn {
+.hero-btn {
     padding: 12px;
     border-radius: 10px; 
     width: 80%;
-    background-color: #e7e2e2;
-    border: 1px solid #000000;
+    background-color: #f8f8f8;
+    border: 1px solid #c0bbbb;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -237,11 +237,21 @@ nav {
     
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-    background-color: #1b4bf8;
-    color: #f8f8f8;
+.signup-btn:hover,
+.signup-btn:focus {
+    background-color: #e7e2e2;
+    color: #1b4bf8;
 }
+
+
+.btn-hover-blue:hover,
+.btn-hover-blue:focus {
+    background-color: #1b4bf8;
+    color: white;
+}
+
+
+
 
 
 /* Andriod button modifier class */
@@ -249,8 +259,9 @@ nav {
     margin: 1em 0;
 }
 
+/* andriod and iphone button logo */
 .button-logo {
-    height: 20px;
+   height: 20px;
    margin-right: 1.6em;
     
    
@@ -268,12 +279,11 @@ nav {
 /* ==Testimonial== */
 
 .testimonial {
-    width: 65%;
-    margin: 0 auto;
     text-align: center;
     font-weight: 700;
     font-size: 2.1rem;
     padding: 2em;
+    
 }
 
 .testimonial span {
@@ -287,6 +297,11 @@ nav {
 
 @media (min-width: 615px) {
 
+    .container {
+        min-width: 1000px;
+        
+    }
+    
     header {
         min-width: 1000px;
     }
@@ -296,11 +311,7 @@ nav {
         justify-content: space-between;
     }
 
-    .container {
-        min-width: 1000px;
-        
-        
-    }
+    
 
 
     /* Typography */
@@ -337,8 +348,8 @@ nav {
 
     .nav-buttons {
         margin-right: 1em;
-        background-color: #e7e2e2;
-        border: 0;
+        background-color: #f8f8f8;
+        border: 1px solid #1b4bf8;
         border-radius: 5px;
         padding: .75em;
         display: initial;
@@ -349,9 +360,7 @@ nav {
         color: #f8f8f8;
     }
 
-    .login-btn{
-        border: 1px solid #1b4bf8;
-    }
+    
 
     #hero-signup-btn {
         width: 30%;
@@ -371,7 +380,7 @@ nav {
 .hero-text-container {
     width: 50%;
     min-width: 400px;
-    padding-left: 4em;
+    padding-left: 3em;
     
 }
 
@@ -409,24 +418,22 @@ nav {
 
 .client-ads-container {
     display: flex;
-    /* width: 100%; */
-    background-color: #e7e2e2;
+    background-color: #f8f8f8;
     padding: 1.5em;
-    justify-content: space-evenly;
     align-items: center;
-    /* margin:0 auto; */
+  
     
 }
 
 .client-ads {
-    width: 17%;
+    flex-basis: 100%;
     margin-top: 1.12em;
 }
 
 .client-ads-image {
-    width: 30%;
-    opacity: 0.4;
-    /* filter: blur(1px); */
+    width: 21%;
+    opacity: 0.3;
+    margin: 0 auto;
     
 }
 

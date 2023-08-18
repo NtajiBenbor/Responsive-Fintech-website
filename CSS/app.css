@@ -85,7 +85,7 @@ header {
     max-width: 1200px;
     text-align: center;
     margin: 0 auto;
-    /* border: 2px solid rebeccapurple; */
+    border: 2px solid rebeccapurple;
     
     
 }
@@ -154,7 +154,7 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin-bottom: 2em;
     
     
@@ -172,7 +172,7 @@ nav {
 
 .hero-image-container {
     order: -1;  
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     padding: 1em;
     
     
@@ -188,6 +188,7 @@ nav {
     background-color: rgba(160, 193, 247, 0.1);
     /* position: bottom; */
     max-height: 500px;
+    border: 2px solid red;
     
     
 }
@@ -298,6 +299,7 @@ nav {
     .container {
         min-width: 1000px;
         
+        
     }
 
 
@@ -407,11 +409,12 @@ nav {
 
 .client-ads-container {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     background-color: #e7e2e2;
     padding: 1.5em;
     justify-content: space-evenly;
     align-items: center;
+    /* margin:0 auto; */
     
 }
 

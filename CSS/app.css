@@ -39,32 +39,50 @@ button {
     font-weight: 900;
 }
 
+
+
 /* ===================================================== */
 
 /*
 ========Typography========== */
 h1,
-h2 {
-    color: #1b4bf8;
+h2,
+h3,
+h4,
+h5 {
+    color: #101b42;
+    font-weight: 700;
 }
 
 .site-title{
     font-size: 1.8rem;
     font-weight: 700;
+    color: #1b4bf8;
 }
 
 
 
-a {
+a:not(.nav-li-links) {
     text-decoration: none;
+    color: #101b42;
+    font-weight: 700;
 }
 
+a:hover,
+a:focus {
+    color: #1b4bf8;
+}
+
+
+.copyright-section {
+    font-size: .8rem;
+}
 
 /*============ LAYOUTS========= */
 
 .container {
     width: 95%;
-    max-width: 1400px;
+    max-width: 1200px;
     text-align: center;
     margin: 0 auto;
     /* border: 2px solid rebeccapurple; */
@@ -84,6 +102,11 @@ header {
     
     
     
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 2em;
 }
 
 .header-container {
@@ -114,15 +137,12 @@ nav {
     padding: .5em;
     text-decoration: none;
     font-weight: 700;
+    color: #000000;
     
 
 }
 
-.nav-li-links:hover,
-.nav-li-links:focus {
-    color: #3561FDff;
-    
-}
+
 
 .current-page {
     border-bottom: 2px solid #1b4bf8;
@@ -174,7 +194,7 @@ nav {
 
 .hero-image-container {
     order: -1;  
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     padding: 1em;
     
     
@@ -190,7 +210,7 @@ nav {
     background-color: rgba(160, 193, 247, 0.1);
     /* position: bottom; */
     max-height: 500px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     
     
 }
@@ -241,6 +261,7 @@ nav {
 .signup-btn:focus {
     background-color: #e7e2e2;
     color: #1b4bf8;
+    cursor: pointer;
 }
 
 
@@ -248,6 +269,7 @@ nav {
 .btn-hover-blue:focus {
     background-color: #1b4bf8;
     color: white;
+    cursor: pointer;
 }
 
 
@@ -272,7 +294,7 @@ nav {
 
 /* ==Client Advert Section== */
 
-.client-ads-container {
+.client-ads-banner {
     display: none;
 }
 
@@ -284,6 +306,7 @@ nav {
     font-size: 2.1rem;
     padding: 2em;
     
+    
 }
 
 .testimonial span {
@@ -292,19 +315,168 @@ nav {
 
 
 
+/* ==== CARD SECTION === */
+
+.card-wrapper { 
+    width: 95%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    /* border: 4px solid aquamarine; */
+    background-color: #f8f8f8;
+
+}
+
+.service {
+    padding-bottom: 1em;
+}
+
+
+
+.card-container {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding-bottom: 1em;
+    gap: 1em;
+
+
+}
+
+.cards {
+    /* border: 1px solid maroon; */
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgba(160, 193, 247, 0.3);
+}
+
+.card-bg-accent {
+    background-color: rgba(248, 200, 191, 0.3);
+}
+
+.card-text-container {
+    /* border: 3px solid saddlebrown; */
+    /* order: -1; */
+    
+    
+}
+
+.card-img-container{
+    /* border: 3px solid black; */
+    order: -1;
+}
+
+.card-image {
+    width: 100%;
+    /* border: 2px solid teal; */
+    object-fit: cover;
+    max-height: 300px;
+    
+}
+
+
+
+/* Card REAMore and arrow styles */
+.read-more-flex-container{
+    display: inline-flex;
+
+}
+
+.arrow-image {
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+/* ============================================*/
+/* PHONE APP SECTION STYLES */
+
+.phoneapp-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.phoneapp-info-title {
+    margin-right: 2em;
+}
+
+.phoneapp-info-body {
+    border-left: 4px solid #1b4bf8;
+    padding-left: 2em;
+    padding-bottom: 4em;
+    margin-left: .5em;
+}
+
+.phoneapp-button-container {
+    width: 50%;
+    margin: 2em auto;
+}
+
+/* ============================= */
+
+/* FOOTER SECTION */
+.footer-container {
+    display: flex;
+    text-align: left;
+    padding-left: 1em;
+    flex-direction: column;
+}
+
+.footer-links-container {
+    /* display: flex; */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    /* border: 2px solid #000000; */
+    
+}
+
+.footer-links li {
+    margin: 1em 0;
+}
+
+
+.copyright-section {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Queries */
 
 @media (min-width: 615px) {
 
-    .container {
+    .container, header {
         min-width: 1000px;
+       
         
     }
     
-    header {
+    /* header {
         min-width: 1000px;
-    }
+    } */
    
     .header-container {
         display: flex;
@@ -417,13 +589,19 @@ nav {
 /* ==Client Advert Section== */
 
 .client-ads-container {
+    margin-bottom: 2em;
+}
+
+.client-ads-banner {
     display: flex;
     background-color: #f8f8f8;
     padding: 1.5em;
     align-items: center;
+    
   
     
 }
+
 
 .client-ads {
     flex-basis: 100%;
@@ -441,6 +619,97 @@ nav {
     opacity: 1;
 }
 
+
+/* ===CARD SECTION==== */
+.card-wrapper {
+    margin-bottom: 1em;
+}
+
+.service {
+    padding-bottom: 2em;
+}
+
+.card-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cards {
+    width: 30%;
+    height: 100%;
+    
+
+   
+}
+
+.card-text-container {
+    height: 40%;
+    order: -1;
+    padding-left: .5em;
+   
+
+}
+
+card-img-container {
+    height: 60%;
+    order: -1;
+    
+    
+
+}
+
+/* ====================== */
+/* PHONE APPP SECTION STYLES */
+.phoneapp-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 2.5em;
+}
+
+.phoneapp-image-container {
+    width: 45%;
+
+}
+
+.phoneapp-info-container {
+    width: 45%;
+    text-align: left;
+    padding: 2em;
+    
+}
+
+.phoneapp-image {
+    
+    object-fit: cover;
+    max-height: 500px;
+    margin: 2em auto;
+    padding-top: 1em;
+}
+
+/* ============================= */
+/* FOOTERS SECTION */
+
+.footer-links-container {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    
+}
+
+.footer-links-main {
+    flex: 1;
+}
+  
+.copyright-section {
+    display: flex;
+    justify-content: space-between;
+}
 }
 
 /* Media querie for the Nav Login and Sign up buttons */

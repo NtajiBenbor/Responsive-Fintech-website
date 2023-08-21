@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FinBase Website</title>
     <link rel="stylesheet" href="/CSS/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -38,30 +44,30 @@
     <main >
       <!-- FAQ QUESTIONIER  -->
       <div class="container faq-container"><!--main layout wrapper -->
-        <div class="hero-text-container faq-text-container"><!--flex-container -->
-          <label for="q-1"><h2 class="faq-title">FAQs</h2></label>
+        <div class=" faq-text-container "><!--flex-container -->
+          <label for="q-1"><h2 class="faq-title sub-headings">FAQs</h2></label>
           <select name="question-1" id="q-1" class="faq-question">
             <option value="" class="option">Is finbase security gauranteed?</option>
-            <option value="Lorem ipsum dolor">
+            <option value="Lorem ipsum dolor" class="option">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
               Veritatis, amet repudiandae! Non nam dolorem repellat cum.</option>
           </select>
           <select name="question-2" id="q-2" class="faq-question">
-            <option value="">How do i activate my FinBase account?</option>
-            <option value="Lorem ipsum dolor">
+            <option value="" class="option">How do i activate my FinBase account?</option>
+            <option value="Lorem ipsum dolor" class="option">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
               Veritatis, amet repudiandae! Non nam dolorem repellat cum.</option>
           </select>
           <select name="question-3" id="q-3" class="faq-question">
-            <option value="">What should i do if i forget my pin?</option>
-            <option value="Lorem ipsum dolor">
+            <option value="" class="option">What should i do if i forget my pin?</option>
+            <option value="Lorem ipsum dolor" class="option">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
               Veritatis, amet repudiandae! Non nam dolorem repellat cum.</option>
           </select>
           </select>
           
         </div>
-        <div class="hero-image-container faq-image-container">
+        <div class=" faq-image-container">
           <img
             src="/img/3d-flame-assistant-bot-showing-task-lists-to-business-woman.png"
             alt="a 3d-bussineswoman getting bitcoin profit"
@@ -74,15 +80,20 @@
       <!-- TESTIMONIAL SECTION OF THE FAQ PAGE -->
       <section class="customer-review container">
         <div class="customer-review-pane1">
-          <h3 class="customer-review-pane1-body">What Our Customers Say About us</h3>
+          <h3 class="customer-review-pane1-body sub-headings">What Our Customers Say About us</h3>
           <p><strong>Testimonials</strong></p>
         </div>
         <div class="customer-review-pane2">
           <div class="customer-review-1">
             <p>Dealt with enquiry and subsiquent order efficiently and
                quickly so pleased with price and service i orderd a second one</p>
-            <p><strong>Benedict Ntaji</strong></p>
-            <img src="" alt="">
+            <p><strong>Josphine Lukpata</strong></p>
+            <div class="star-container">
+              <img src="/img/icons8-star-64.png" alt="star icon for customer review"class="customer-review-star">
+              <img src="/img/icons8-star-64.png" alt="star icon for customer review"class="customer-review-star">
+              <img src="/img/icons8-star-64.png" alt="star icon for customer review"class="customer-review-star">
+              <img src="/img/icons8-star-64.png" alt="star icon for customer review"class="customer-review-star">
+            </div>
           </div>
         </div>
       </section>
@@ -90,7 +101,7 @@
 
       <!-- SIGNUP AREA SECTION -->
       <section class="signup-section container">
-          <h3 class="signup-title">Start growing your wealth today</h3>
+          <h3 class="signup-title sub-headings">Start growing your wealth today</h3>
           <form action="" method="post">
             <input type="email" name="customer-email" id="customer-email" required>
             <label for="customer-email"><button type="submit" class="email-btn">Sign Up</button></label>

@@ -76,7 +76,7 @@ h5 {
 
 a:not(.nav-li-links) {
     text-decoration: none;
-    color: #101b42;
+    color: #f8f8f8;
     font-weight: 700;
 }
 
@@ -91,7 +91,7 @@ a:focus {
 }
 
 .signup-title {
-    color: #f8f8f8;
+    color: #1b4bf8;
 }
 
 /*============ LAYOUTS========= */
@@ -121,7 +121,8 @@ header {
 }
 
 footer {
-    background-color: #f8f8f8;
+    background-color: #101b42;
+    color: #f8f8f8;
     padding: 2em;
 }
 
@@ -437,8 +438,8 @@ nav {
 .footer-container {
     display: flex;
     text-align: left;
-    padding-left: 1em;
     flex-direction: column;
+    color: #f8f8f8;
 }
 
 .footer-links-container {
@@ -454,7 +455,9 @@ nav {
 
 .footer-links li {
     margin: 1em 0;
+    
 }
+  
 
 
 .copyright-section {
@@ -464,8 +467,10 @@ nav {
 /* ==========================================
 ==============FAQ PAGE====================== */
 .faq-container {
+    padding: 0 1.2em;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 /* ==frequently asked questions text container=== */
 .faq-text-container {
@@ -490,7 +495,7 @@ nav {
 .faq-question .option {
     background-color: #f8f8f8;
     color: #101b42;
-    width: 80% !important;
+    
 }
 
 /* ==frequently asked questions image container=== */
@@ -543,9 +548,9 @@ nav {
 
 /* ==SIGNUP AREA SECTION== */
 .signup-section {
-    background-color: rgb(28, 76, 247);
+    color: #1b4bf8;
     padding: 5em;
-    color: #f8f8f8;
+    background-color: #f8f8f8;
     margin-bottom: 1.5em;
 
 
@@ -561,10 +566,10 @@ input[type="email"] {
     margin: 0 auto;
     padding: 1em;
     padding-right: 0;
-    border: 2px solid #f8f8f8;
-    outline: none;
+    border: 2px solid #8a8989;
+   
     border-radius: 26px;
-    background-color: #1b4bf8;
+    background-color: #e7e2e2;
     
 }
 
@@ -572,10 +577,10 @@ input[type="email"] {
 
 .email-btn {
     padding: .7em 2.5em;
-    background-color: #f8f8f8;
+    color: #f8f8f8;
     margin-left: 0;
     border-radius: 25px;
-    color: #1b4bf8;
+    background-color: #1b4bf8;
     position: relative;
     left: -90px;
     top: 1px;
@@ -624,6 +629,10 @@ input[type="email"] {
         line-height: 1.2em;
     }
 
+
+    a:not(.nav-li-links) {
+        color: #101b42;
+    }
 
     /* Layouts */
     .nav-ul-container {
@@ -831,9 +840,14 @@ card-img-container {
 /* ============================= */
 /* FOOTERS SECTION */
 
+footer, footer p {
+    background-color: #f8f8f8;
+    color: #101b42;
+}
+
 .footer-links-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
 
@@ -944,7 +958,9 @@ card-img-container {
     
 }
 
-
+.signup-title {
+    color: #f8f8f8;
+}
 
 
 form {

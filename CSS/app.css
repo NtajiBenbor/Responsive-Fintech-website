@@ -704,6 +704,7 @@ card-img-container {
 
 .footer-links-main {
     flex: 1;
+    padding-right: 1em;
 }
   
 .copyright-section {

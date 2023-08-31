@@ -1,20 +1,4 @@
-/* 
 
-CSS HEX
---black: #010001ff;
---periwinkle: #CCD6FCff;
---alice-blue: #F2F7FFff;
---neon-blue: #3561FDff;
---seashell: #FEF7F1ff; 
-
-SCSS RGB
-$black: rgba(1, 0, 1, 1);
-$periwinkle: rgba(204, 214, 252, 1);
-$alice-blue: rgba(242, 247, 255, 1);
-$neon-blue: rgba(53, 97, 253, 1);
-$seashell: rgba(254, 247, 241, 1);
- 
-*/
 
 * {
     box-sizing: border-box;
@@ -100,10 +84,7 @@ a:focus {
     width: 95%;
     max-width: 1200px;
     text-align: center;
-    margin: 0 auto;
-    /* border: 2px solid rebeccapurple; */
-    
-    
+    margin: 0 auto; 
 }
 
 

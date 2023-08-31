@@ -26,9 +26,13 @@ Check it out [here](https://finbase.netlify.app)
 *A screenshot of the Homepage*
 
 
-#### Screenshot 1
+#### Screenshot 2
 ![reference image](/img/FinBase%20Website-FAQ%20Page.png)
 *A screenshot of the FAQ page*
+
+#### Screenshot 3
+![reference image](/img/FinBase-mobile.png)
+*A screenshot of the mobile view*
 
 
 

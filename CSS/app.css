@@ -339,8 +339,9 @@ nav {
     max-width: 1200px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 2em;
     /* border: 4px solid aquamarine; */
-    background-color: #f8f8f8;
+    
 
 }
 
@@ -476,6 +477,7 @@ nav {
 .faq-text-container {
     /* background-color: #1b4bf8; */
     padding: 1.5em 0;
+    width: 100%;
     
    
 }
@@ -501,6 +503,7 @@ nav {
 /* ==frequently asked questions image container=== */
 .faq-image-container {
     order: -1;
+    width: 100%;
 
 }
 
@@ -764,6 +767,7 @@ input[type="email"] {
 .card-wrapper {
     padding: 4em 0;
     margin-bottom: 5em;
+    background-color: #f8f8f8;
 }
 
 .service {

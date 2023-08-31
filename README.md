@@ -11,7 +11,7 @@
 
 
 ## 1. Project Overview: :smile:
-Hey guys, this project is a website designed for a fictional Fintech company "FinBase". This website is primarily an informative platform where the company's range products and services  are showcased in vibrant colour. It consists of a Visually appealing homepage and an FAQ page, which includes a convenient email input box for user inquiries.
+Hey guys, this project is a website designed for a fictional Fintech company "FinBase". This website is primarily an informative platform where the company's range of products and services  are showcased in vibrant colour. It consists of a Visually appealing homepage and an FAQ page, which includes a convenient email input box for user inquiries.
 
 ***
 
